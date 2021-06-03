@@ -1,0 +1,47 @@
+.bofa-btn {
+    cursor: pointer;
+    font-size: var(--font-size);
+    color: #fff;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 3px 1px #aab4bd;
+    border: none;
+    border-radius: 0;
+}
+
+.primary:not(.disabled):focus {
+    outline: 2px solid #000;
+    border-radius: 0;
+}
+
+.btn-icon {
+    margin-left: 1rem;
+}
+
+.primary {
+    background-color: #3498eb;
+}
+
+.primary:not(.disabled):hover {
+    background-color: #1946c2;
+}
+
+.secondary {
+    background-color: #f7fafc;
+    color: #a8a8a8;
+    border: 2px solid black;
+}
+
+.secondary:not(.disabled):hover {
+    background-color: #a8a8a8;
+    color: #f7fafc;
+}
+
+.secondary:not(.disabled):focus {
+    outline: 3px solid #a8a8a8;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #edeff5;
+    color: #aab4bd;
+}   

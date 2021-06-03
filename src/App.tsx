@@ -1,25 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BofaButton, { BUTTON_TYPE } from './BofaButton';
 
 function App() {
+  const {secondary} = BUTTON_TYPE;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="sample">
+          <div className="sample-label">Primary:</div>
+          <BofaButton label="Delete" faIconClasses="fa fa-trash" />
+        </div>
+        <div className="sample">
+          <div className="sample-label">Secondary:</div>
+          <BofaButton label="Delete" faIconClasses="fa fa-trash" type={secondary} />
+        </div>
+        <div className="sample">
+          <div className="sample-label">Disabled:</div>
+          <BofaButton label="Delete" faIconClasses="fa fa-trash" isDisabled={true}/>
+        </div>
+      </div>
     </div>
+    
   );
 }
 
